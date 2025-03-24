@@ -1,2 +1,0 @@
-pip install google
-pip install flask
