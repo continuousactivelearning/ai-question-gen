@@ -1,0 +1,191 @@
+/* Global Body Styling */
+body {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #dbeafe, #6366f1);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-top: 40px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Shared container card */
+.container, .transcript-container, .question-generator, .question-response, .formatted-response {
+  width: 90%;
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover, .transcript-container:hover, .question-generator:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.15);
+}
+
+/* Buttons */
+button {
+  background-color: #6366f1;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #4f46e5;
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  background-color: #a5b4fc;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Input and Select fields */
+input, select {
+  padding: 0.75rem 1rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 0.75rem;
+  border: 1px solid #cbd5e1;
+  background-color: #f8fafc;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+  border-color: #6366f1;
+  outline: none;
+}
+
+/* Audio Recorder */
+.audio-recorder {
+  align-content: center;
+}
+
+/* Button Group Layout */
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Transcript Section */
+.transcript-section {
+  width: 100%;
+  background: #f9fafb;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid #e2e8f0;
+  overflow-y: auto;
+  max-height: 250px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+
+/* Segment List */
+.segment-list {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.segment-list li {
+  background: #ffffff;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  margin-bottom: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  transition: transform 0.2s;
+}
+
+.segment-list li:hover {
+  transform: translateX(5px);
+}
+
+/* Text and Pre */
+ul {
+  padding-left: 1.5rem;
+  color: #475569;
+}
+
+pre {
+  background: #f1f5f9;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.9rem;
+  overflow-x: auto;
+  margin-top: 10px;
+}
+
+/* Loading Indicator */
+.loading-indicator {
+  margin-top: 20px;
+  color: #4338ca;
+  font-weight: bold;
+  font-size: 1rem;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
+
+/* Transcript Box */
+.transcript-box {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  overflow-y: auto;
+}
+
+/* Input Group */
+.input-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Youtube Input */
+.youtube-input button {
+  align-self: center;
+  display: flex;
+}
+
+.youtube-input h4 {
+  margin: 1rem 0;
+  text-align: center;
+}
