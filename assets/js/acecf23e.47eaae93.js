@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkaiquestion_docs=self.webpackChunkaiquestion_docs||[]).push([[1903],{1912:s=>{s.exports=JSON.parse('{"blogBasePath":"/ai-question-gen/blog","blogTitle":"Blog","authorsListPath":"/ai-question-gen/blog/authors"}')}}]);
