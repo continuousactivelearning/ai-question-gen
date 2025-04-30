@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkaiquestion_docs=self.webpackChunkaiquestion_docs||[]).push([[2208],{9615:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/ai-question-gen/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
